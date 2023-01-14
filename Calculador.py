@@ -12,6 +12,17 @@
     9) Tangente 
     10) Apagar calculadora
     """)
+    while True:
+        try:
+            opciones = int(input("Seleciona una opción: "))
+        except ValueError:
+            print("¡Selecciona una opción válida!""\n")
+            continue
+        if opciones > 11:
+            print("Selecciona una opción del 1 al 9 o selecciona opción 10 para salir""\n")
+            continue
+        else:
+            break
     if opciones == 1:
         print("SUMA")
     elif opciones == 2:
